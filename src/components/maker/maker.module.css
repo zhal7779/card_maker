@@ -1,4 +1,5 @@
 @value mediaQuery from '../../common/size.css';
+@value makerWhite from '../../common/colors.css';
 
 .maker {
     width: 100%;
@@ -10,6 +11,7 @@
 .container {
     display: flex;
     flex: 1;
+    background-color: makerWhite;
 }
 
 @media screen and (max-width: mediaQuery) {
