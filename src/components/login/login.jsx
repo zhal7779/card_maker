@@ -14,7 +14,7 @@ const Login = ({ authService }) => {
         });
     };
     const onLogin = event => {
-      authService //
+        authService
         .login(event.currentTarget.textContent)
         .then(data => goToMaker(data.user.uid));
     };
@@ -24,7 +24,7 @@ const Login = ({ authService }) => {
         .onAuthChange(user => {
             user && goToMaker(user.id);
         });
-    })
+    });
 
     return (
         <section className={styles.login}>
